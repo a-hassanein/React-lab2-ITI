@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Formtow from "./form2";
+import React from "react";
+import Formikform from "./formik";
+import Register from "./register";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <h1>Login Form Normal</h1>
+        <Formtow />
+        <br></br>
+        <br></br>
+
+        <h1>Login Form Formik</h1>
+        <Formikform />
+        <br></br>
+        <br></br>
+
+        <h1>Register Form </h1>
+        <Register/>
+
+        {/* <h1>FormIK</h1>
+        <Basic/> */}
+      </div>
     </div>
   );
 }
